@@ -1,10 +1,10 @@
 package com.practicum.playlistmaker
 
+import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,31 +14,26 @@ class MainActivity : AppCompatActivity() {
 
         val buttonSearch = findViewById<Button>(R.id.light_mode_search)
 
-        val buttonSearchClickListener: View.OnClickListener = object : View.OnClickListener {
-            override fun onClick(v: View?) {
-                Toast.makeText(this@MainActivity, "Нажали на кнопку поиска!", Toast.LENGTH_SHORT)
-                    .show()
-            }
+        buttonSearch.setOnClickListener {
+            Snackbar.make(it, "Нажали на кнопку поиска!", Snackbar.LENGTH_SHORT).show()
+            val displayIntent = Intent(this, SearchActivity::class.java)
+            startActivity(displayIntent)
         }
 
         val buttonMedia = findViewById<Button>(R.id.light_mode_media)
 
         buttonMedia.setOnClickListener {
-            Toast.makeText(this@MainActivity, "Нажали на кнопку медиатека!", Toast.LENGTH_SHORT)
-                .show()
+            Snackbar.make(it, "Нажали на кнопку медиатеки!", Snackbar.LENGTH_SHORT).show()
+            val displayIntent = Intent(this, MediatekaActivity::class.java)
+            startActivity(displayIntent)
         }
 
         val buttonSettings = findViewById<Button>(R.id.light_mode_settings)
 
-        val buttonSettingsClickListener: View.OnClickListener = object : View.OnClickListener {
-            override fun onClick(v: View?) {
-                Toast.makeText(this@MainActivity, "Нажали на кнопку настройки!", Toast.LENGTH_SHORT)
-                    .show()
-            }
+        buttonSettings.setOnClickListener {
+            Snackbar.make(it, "Нажали на кнопку настройки!", Snackbar.LENGTH_SHORT).show()
+            val displayIntent = Intent(this, SettingsActivity::class.java)
+            startActivity(displayIntent)
         }
-
-        buttonSearch.setOnClickListener(buttonSearchClickListener)
-
-        buttonSettings.setOnClickListener(buttonSettingsClickListener)
     }
 }
