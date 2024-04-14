@@ -5,9 +5,9 @@
     android:layout_height="match_parent"
     android:background="@color/back_blue"
     android:orientation="vertical"
-    android:padding="20dp"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
+    android:padding="@dimen/start_padding"
+    android:paddingLeft="@dimen/side_padding"
+    android:paddingRight="@dimen/side_padding"
     android:weightSum="3">
 
     <FrameLayout
@@ -26,7 +26,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="@dimen/layout_marginTop"
         android:orientation="vertical">
 
         <Button
@@ -38,48 +38,48 @@
             android:textAllCaps="false"
             android:textColor="@color/black_text_button"
             android:textSize="22sp"
-            app:cornerRadius="16dp"
+            app:cornerRadius="@dimen/side_padding"
             android:foreground="?attr/selectableItemBackground"
             android:id="@+id/light_mode_search"
             app:icon="@drawable/light_mode_search"
             app:iconGravity="textStart"
-            app:iconPadding="8dp"
+            app:iconPadding="@dimen/icon_padding"
             app:iconTint="@color/black_text_button" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/layout_marginTopBottom"
             android:layout_weight="1"
             android:backgroundTint="@color/white"
             android:text="@string/main_button_media"
             android:textAllCaps="false"
             android:textColor="@color/black_text_button"
             android:textSize="22sp"
-            app:cornerRadius="16dp"
+            app:cornerRadius="@dimen/side_padding"
             android:foreground="?attr/selectableItemBackground"
             android:id="@+id/light_mode_media"
             app:icon="@drawable/light_mode_media"
             app:iconGravity="textStart"
-            app:iconPadding="8dp"
+            app:iconPadding="@dimen/icon_padding"
             app:iconTint="@color/black_text_button" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/layout_marginTopBottom"
             android:layout_weight="1"
             android:backgroundTint="@color/white"
             android:text="@string/main_button_settings"
             android:textAllCaps="false"
             android:textColor="@color/black_text_button"
             android:textSize="22sp"
-            app:cornerRadius="16dp"
+            app:cornerRadius="@dimen/side_padding"
             android:id="@+id/light_mode_settings"
             android:foreground="?attr/selectableItemBackground"
             app:icon="@drawable/light_mode_settings"
             app:iconGravity="textStart"
-            app:iconPadding="8dp"
+            app:iconPadding="@dimen/icon_padding"
             app:iconTint="@color/black_text_button" />
     </LinearLayout>
 </LinearLayout>

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:orientation="vertical"
-    android:padding="12dp"
+    android:padding="@dimen/padding_End"
     >
 
     <LinearLayout
@@ -25,7 +25,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="@dimen/side_padding"
             android:text="@string/main_button_settings"
             android:textAllCaps="false"
             android:textColor="@color/black_text_button"
@@ -37,15 +37,15 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:paddingStart="16dp"
-        android:paddingEnd="12dp">
+        android:layout_marginTop="@dimen/layout_marginTop"
+        android:paddingStart="@dimen/side_padding"
+        android:paddingEnd="@dimen/padding_End">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/settings_dark_theme"
-            android:textSize="16sp"
-            android:layout_marginBottom="21dp"
+            android:textSize="@dimen/side_padding"
+            android:layout_marginBottom="@dimen/layout_marginBottom"
             android:textColor="@color/black_text_button"
             />
 
@@ -54,21 +54,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="@dimen/icon_padding"
             android:checked="false"/>
     </FrameLayout>
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingStart="16dp"
-        android:paddingEnd="12dp">
+        android:paddingStart="@dimen/side_padding"
+        android:paddingEnd="@dimen/padding_End">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:layout_marginTop="21dp"
-            android:layout_marginBottom="21dp"
+            android:textSize="@dimen/side_padding"
+            android:layout_marginTop="@dimen/layout_marginBottom"
+            android:layout_marginBottom="@dimen/layout_marginBottom"
             android:backgroundTint="@color/white"
             android:text="@string/settings_share"
             android:textColor="@color/black_text_button"
@@ -77,11 +77,11 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="21dp"
+            android:layout_marginTop="@dimen/layout_marginBottom"
             android:layout_gravity="end"
             android:scaleType="centerCrop"
             android:src="@drawable/share"
-            app:iconPadding="8dp"
+            app:iconPadding="@dimen/icon_padding"
             android:id="@+id/share_button"
             app:iconTint="@color/back_blue" />
 
@@ -91,15 +91,15 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingStart="16dp"
-        android:paddingEnd="12dp">
+        android:paddingStart="@dimen/side_padding"
+        android:paddingEnd="@dimen/padding_End">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:layout_marginTop="21dp"
-            android:layout_marginBottom="21dp"
+            android:textSize="@dimen/side_padding"
+            android:layout_marginTop="@dimen/layout_marginBottom"
+            android:layout_marginBottom="@dimen/layout_marginBottom"
             android:backgroundTint="@color/white"
             android:text="@string/settings_group"
             android:textColor="@color/black_text_button"
@@ -108,11 +108,11 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="21dp"
+            android:layout_marginTop="@dimen/layout_marginBottom"
             android:layout_gravity="end"
             android:scaleType="centerCrop"
             android:src="@drawable/group"
-            app:iconPadding="8dp"
+            app:iconPadding="@dimen/icon_padding"
             android:id="@+id/group_button"
             app:iconTint="@color/back_blue" />
 
@@ -122,15 +122,15 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingStart="16dp"
-        android:paddingEnd="12dp">
+        android:paddingStart="@dimen/side_padding"
+        android:paddingEnd="@dimen/padding_End">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="16sp"
-            android:layout_marginTop="21dp"
-            android:layout_marginBottom="21dp"
+            android:layout_marginTop="@dimen/layout_marginBottom"
+            android:layout_marginBottom="@dimen/layout_marginBottom"
             android:backgroundTint="@color/white"
             android:text="@string/settings_condition"
             android:textColor="@color/black_text_button"
@@ -139,11 +139,11 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="21dp"
+            android:layout_marginTop="@dimen/layout_marginBottom"
             android:layout_gravity="end"
             android:scaleType="centerCrop"
             android:src="@drawable/back_arrow"
-            app:iconPadding="8dp"
+            app:iconPadding="@dimen/icon_padding"
             android:id="@+id/conditions_button"
             app:iconTint="@color/back_blue" />
 

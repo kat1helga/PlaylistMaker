@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="start_padding">20dp</dimen>
+    <dimen name="side_padding">16dp</dimen>
+    <dimen name="layout_marginTop">80dp</dimen>
+    <dimen name="padding_End">12dp</dimen>
+    <dimen name="icon_padding">8dp</dimen>
+    <dimen name="layout_marginBottom">21dp</dimen>
+    <dimen name="layout_marginTopBottom">10dp</dimen>
+    layout_marginTop
+</resources>
