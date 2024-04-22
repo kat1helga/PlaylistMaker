@@ -19,7 +19,7 @@
             android:layout_gravity="center"
             android:scaleType="centerCrop"
             android:src="@drawable/light_mode_arrow"
-            app:iconTint="@color/back_blue" />
+            app:tint="@color/back_blue" />
 
         <TextView
             style="@style/SettingsTextStyle"
@@ -37,11 +37,7 @@
 
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/settings_switch"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_marginStart="@dimen/icon_padding"
-            android:checked="false" />
+            style="@style/SwitchStyle" />
     </FrameLayout>
 
     <FrameLayout style="@style/FrameSettingsStyle">
@@ -54,8 +50,7 @@
             android:id="@+id/share_button"
             style="@style/IconSettingsStyle"
             android:src="@drawable/share"
-            app:iconPadding="@dimen/icon_padding"
-            app:iconTint="@color/back_blue" />
+            app:iconPadding="@dimen/icon_padding"/>
 
 
     </FrameLayout>
@@ -70,8 +65,7 @@
             android:id="@+id/group_button"
             style="@style/IconSettingsStyle"
             android:src="@drawable/group"
-            app:iconPadding="@dimen/icon_padding"
-            app:iconTint="@color/back_blue" />
+            app:iconPadding="@dimen/icon_padding" />
 
 
     </FrameLayout>
@@ -86,8 +80,7 @@
             android:id="@+id/conditions_button"
             style="@style/IconSettingsStyle"
             android:src="@drawable/back_arrow"
-            app:iconPadding="@dimen/icon_padding"
-            app:iconTint="@color/back_blue" />
+            app:iconPadding="@dimen/icon_padding" />
 
 
     </FrameLayout>
