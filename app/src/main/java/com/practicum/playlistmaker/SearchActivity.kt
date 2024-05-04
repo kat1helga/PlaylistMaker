@@ -1,10 +1,12 @@
 package com.practicum.playlistmaker
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.view.View
+import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
 import android.widget.ImageView
 import android.widget.LinearLayout
@@ -19,8 +21,17 @@ class SearchActivity : AppCompatActivity() {
         val clearButton = findViewById<ImageView>(R.id.clearIcon)
 
         clearButton.setOnClickListener {
+            // Очистить текстовое поле
             inputEditText.setText("")
+
+            // Скрыть клавиатуру
+            val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+            imm.hideSoftInputFromWindow(inputEditText.windowToken, 0)
+
+            // Скрыть кнопку "clearButton"
+            clearButton.visibility = View.GONE
         }
+
 
         val simpleTextWatcher = object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
@@ -41,6 +52,8 @@ class SearchActivity : AppCompatActivity() {
         inputEditText.addTextChangedListener(simpleTextWatcher)
     }
 
+
+
     private fun clearButtonVisibility(s: CharSequence?): Int {
         return if (s.isNullOrEmpty()) {
             View.GONE
@@ -49,12 +62,4 @@ class SearchActivity : AppCompatActivity() {
         }
     }
 
-    private fun isPrime(number: Int): Boolean {
-        for (i in 2..number / 2) {
-            if (number % i == 0) {
-                return false
-            }
-        }
-        return true
-    }
 }
