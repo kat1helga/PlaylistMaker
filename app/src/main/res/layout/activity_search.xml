@@ -31,31 +31,27 @@
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
         android:layout_marginTop="56dp"
         android:orientation="horizontal"
         tools:context=".MainActivity"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-        <ImageView
-            android:id="@+id/clearSearch"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:src="@drawable/light_mode_search"
-            />
+
 
         <EditText
             android:id="@+id/inputEditText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@null"
+            android:drawableStart="@drawable/light_mode_search"
             android:hint="@string/main_button_search"
             android:maxLength="50"
             android:maxLines="1"
             android:inputType="text"
             android:textColor="@color/black"
             android:textColorHint="@color/black"
-            android:drawable="@null"
             />
 
         <ImageView

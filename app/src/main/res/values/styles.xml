@@ -80,4 +80,12 @@
         <item name="android:checked">false</item>
         <item name="colorControlActivated">#AEAFB4</item>
     </style>
+
+    <style name="SearchStyle">
+        <item name="android:background">@color/black_text_button</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+    </style>
+
+
 </resources>
